@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" manifest="offline_file.appache">
+<style>
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="Calculator.css">
+    <link rel="icon" sizes="152x152" href="Icons/icon.png">
+    <link rel="apple-touch-icon" href="Icons/icon.png">
+    <link rel="shortcut-icon" href="Icons/icon.png" type="image/x-icon">
+    <title>Currency Converter</title>
+</head>
+<body>
+<header>Currency Converter</header>
+<div id="barDiv">
+    <div class="navbar" id="navbar">
+    </div>`
+    <div class="menu"></div>
+    <div class="menu"></div>
+    <div class="menu"></div>
+    <div id="options">
+        <table id="navbarTable">
+            <tr>
+
+                <td>
+                    <label for="homeCurrency">Home</label>
+                </td>
+                <td>
+                    <select id="homeCurrency">
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP" selected>GBP</option>
+                        <option value="HKD">HKD</option>
+                        <option value="HRK">HRK</option>
+                        <option value="HUF">HUF</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="INR">INR</option>
+                        <option value="ISK">ISK</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="MXN">MXN</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="PHP">PHP</option>
+                        <option value="PLN">PLN</option>
+                        <option value="RON">RON</option>
+                        <option value="RUB">RUB</option>
+                        <option value="SEK">SEK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="TRY">TRY</option>
+                        <option value="USD">USD</option>
+                        <option value="ZAR">ZAR</option>
+                    </select>
+                </td>
+                <td>
+                    <img class="home-flag" src="Icons/GBP.png" height="25vh" width="35vh">
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <label for="destinationCurrency">Visiting</label>
+                </td>
+                <td>
+                    <select id="destinationCurrency">
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
+                        <option value="EUR" selected>EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="HKD">HKD</option>
+                        <option value="HRK">HRK</option>
+                        <option value="HUF">HUF</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="INR">INR</option>
+                        <option value="ISK">ISK</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="MXN">MXN</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="PHP">PHP</option>
+                        <option value="PLN">PLN</option>
+                        <option value="RON">RON</option>
+                        <option value="RUB">RUB</option>
+                        <option value="SEK">SEK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="TRY">TRY</option>
+                        <option value="USD">USD</option>
+                        <option value="ZAR">ZAR</option>
+                    </select>
+                </td>
+                <td>
+                    <img class="destination-flag" src="Icons/EUR.png" height="25vh" width="35vh">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Bank fee</label>
+                </td>
+            <tr>
+                <td>
+                    <input type="radio" id="radio1" name="fee" value="0.0">0.0%
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="radio2" name="fee" value="2.0">2.0%
+                </td>
+            </tr>
+            <td>
+                <input type="radio" id="radio3" name="fee" value="4.0">4.0%
+            </td>
+            <tr>
+                <td>
+                    <input type="radio" id="radio4" name="fee" value="6.0">6.0%
+                </td>
+            </tr>
+            </td>
+            </tr>
+        </table>
+        <button id="select" data-number="go">Confirm</button>
+    </div>
+    <table id="flag-table">
+        <tr>
+            <td>
+                <img class="home-flag" src="Icons/GBP.png" height="30vh" width="40px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="color: black;font-size: 25px">to</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="destination-flag" src="Icons/EUR.png" height="30vh" width="40px">
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="main">
+
+    <input type="text" disabled id="display" name="numberField" value="0"><br>
+    <button id="button7" data-number="7">7</button>
+    <button id="button8" data-number="8">8</button>
+    <button id="button9" data-number="9">9</button>
+    <br>
+    <button id="button4" data-number="4">4</button>
+    <button id="button5" data-number="5">5</button>
+    <button id="button6" data-number="6">6</button>
+    <br>
+    <button id="button1" data-number="1">1</button>
+    <button id="button2" data-number="2">2</button>
+    <button id="button3" data-number="3">3</button>
+    <br>
+    <button id="buttonC" data-number="C">C</button>
+    <button id="button0" data-number="0">0</button>
+    <button id="button=" data-number="=">=</button>
+</div>
+<footer>Dimitar Mihaylov</footer>
+<script type="text/javascript" src="CalculatorModel.js"></script>
+<script type="text/javascript" src="CalculatorView.js"></script>
+<script type="text/javascript" src="CalculatorController.js"></script>
+</body>
+
+
+</html>
+
